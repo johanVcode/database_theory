@@ -3,9 +3,9 @@
 
 CREATE TABLE member (
     medlemskaps_id SERIAL PRIMARY KEY,
-    namn VARCHAR(100),
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
     telefonnummer VARCHAR(50)
-
 );
 
 CREATE TABLE book(
@@ -36,17 +36,17 @@ CREATE TABLE loan_item (
 );
 
 -- MEMBER (10 rows, includes matching first/last name pairs for realism)
-INSERT INTO member (namn, telefonnummer) VALUES
-('Anna Andersson', '0701234567'),
-('Erik Andersson', '0709876543'),   -- same surname, different first name
-('Anna Karlsson', '0761112233'),    -- same first name, different surname
-('Johan Berg', '0704455667'),
-('Maria Lind', '0709988776'),
-('Karl Nilsson', '0705566778'),
-('Sara Nilsson', '0708899001'),     -- same surname as above
-('Oskar Holm', '0707766554'),
-('Emma Sjöberg', '0703322110'),
-('Lars Persson', '0706677889');
+INSERT INTO member (first_name, last_name, telefonnummer) VALUES
+('Anna', 'Andersson', '0701234567'),
+('Erik', 'Andersson', '0709876543'),    -- same surname, different first name
+('Anna', 'Karlsson', '0761112233'),     -- same first name, different surname
+('Johan', 'Berg', '0704455667'),
+('Maria', 'Lind', '0709988776'),
+('Karl', 'Nilsson', '0705566778'),
+('Sara', 'Nilsson', '0708899001'),      -- same surname as above
+('Oskar', 'Holm', '0707766554'),
+('Emma', 'Sjöberg', '0703322110'),
+('Lars', 'Persson', '0706677889');
 
 -- BOOK (10 rows)
 INSERT INTO book (title, author, isbn) VALUES
