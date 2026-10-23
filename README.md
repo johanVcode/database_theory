@@ -3,8 +3,6 @@
 My first database lab: designing a relational database for a library
 that tracks books, copies, members and loans.
 
-**Graded: VG (100%).** Teacher feedback: all tasks completed, clear presentation.
-
 > **Kept as submitted.** This was my first lab, and I've left it exactly as
 > I handed it in, mistakes included, so you can see where I started.
 > What I'd do differently today is listed at the bottom.
